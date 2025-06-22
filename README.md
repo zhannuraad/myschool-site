@@ -1,1 +1,1 @@
-# myschool-site
+# index.html
