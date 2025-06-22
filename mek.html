@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тоғас батыра мектебі</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1a73e8, #0d47a1);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #1a73e8;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      color: #0d47a1;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      border-left: 5px solid #1a73e8;
+      padding-left: 10px;
+      color: #0d47a1;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: #1a73e8;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    /* Анимациялар мен JS әсерлері */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-in-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .toggle-content {
+      display: none;
+      margin-top: 10px;
+      animation: fadeIn 0.5s ease-in-out forwards;
+    }
+
+    .toggle-content.show {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .toggle-button {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 15px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .toggle-button:hover {
+      background-color: #0d47a1;
+    }
+.flag-animation {
+  text-align: center;
+  margin: 20px 0 40px;
+}
+
+.flag-animation img {
+  width: 60px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1> "Тоғас батыр атындағы орта мектеп" КММ</h1>
+    <p>Ресми ақпараттық сайт прототипі</p>
+  </header>
+
+  <nav>
+    <a href="#home">Басты бет</a>
+    <a href="#about">Біз туралы</a>
+    <a href="#teachers">Мұғалімдер</a>
+    <a href="#news">Жаңалықтар</a>
+    <a href="#contact">Байланыс</a>
+  </nav>
+
+  <div class="container">
+    <section id="home" class="fade-in">
+      <h2>Басты бет</h2>
+      <p>Біздің мектеп – сапалы білім мен тәрбиені басты орынға қоятын білім ордасы.</p>
+ 
+    </section>
+
+    <section id="about" class="fade-in">
+      <h2>Біз туралы</h2>
+      <p>Мектеп 1972 жылы құрылған. Мақсаты: Оқушыларды қазіргі заман талабына сай терең білім алуға ынталандыру; Жас ұрпақтың танымдық көзқарасын, ой-өрісін, дүние-танымын кеңейту.</p>
+    </section>
+
+    <section id="teachers" class="fade-in">
+      <h2>Мұғалімдер</h2>
+      <ul>
+        <li>Айгүл Аманова – Математика пәні</li>
+        <li>Ержан Сейітов – Информатика пәні</li>
+       <li>Ағанасов Шалқар – Математика пәні</li>
+        <li>Болатбергенов Мағжан – Информатика пәні</li>
+        <li>Айтқалиева Баян – Қазақ тілі пәні</li>
+        <li>Қайырғалиева Жанна - Химия пәні</li>
+        <li>Өкпебаева Мәрзия - География пәні</li>
+        <li>Ығиев Бақытжан - Тарих пәні</li>
+        <li>Жағыпарова Нұргүл - Физика пәні</li>
+        <li>Акказина Раушан - Орыс тілі пәні</li>
+        <li>Рахимова Гульнар - Ағылшын тілі пәні</li>
+      </ul>
+    </section>
+
+    <section id="news" class="fade-in">
+      <h2>Жаңалықтар</h2>
+      <button class="toggle-button" onclick="toggleNews()">Жаңалықтарды көру</button>
+      <div class="toggle-content" id="newsContent">
+        <p><strong>01.05.2025:</strong> Оқушылар арасында спорттық жарыс өтті.</p>
+        <p><strong>20.04.2025:</strong> Мектеп бітірушілерге арнап ашық есік күні өтті.</p>
+        <p><strong>01.05.2025:</strong> Спорттық жарыс өтті</p>
+        <p><strong>24.05.2025:</strong> Ашық есік күні өтті</p>
+        <p><strong>01.06.2025:</strong> Балалар мейрамына орай концерт </p>
+        <p><strong>02.06.2025:</strong> Лагерь ашылды</p>
+      </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2>Байланыс</h2>
+      <p><strong>Мекенжай:</strong> Абай облысы, Ақсуат ауданы</p>
+      <p><strong>Email:</strong> <a href="mailto:school@example.com">aksschool@example.com</a></p>
+      <p><strong>Телефон:</strong> +7 (7222) 123-456</p>
+      <a href="https://instagram.com/togas_school" target="_blank">Instagram парақшамыз</a>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 КГУ "Средняя школа имени Тогас батыра"</p>
+  </footer>
+  <div class="flag-animation">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kazakhstan.svg" alt="Қазақстан туы">
+  </div>
+
+  <script>
+    // Fade-in анимация
+    const fadeInElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    fadeInElements.forEach(el => observer.observe(el));
+
+    // Toggle жаңалықтар
+    function toggleNews() {
+      const content = document.getElementById('newsContent');
+      content.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
